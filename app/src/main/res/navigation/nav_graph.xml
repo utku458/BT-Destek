@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/adminHomePageFragment2">
+    <fragment
+        android:id="@+id/adminHomePageFragment2"
+        android:name="com.utkualtinay37.btdestekuygulamasi.adminFragment.AdminHomePageFragment"
+        android:label="fragment_admin_home_page"
+        tools:layout="@layout/fragment_admin_home_page" >
+        <action
+            android:id="@+id/action_adminHomePageFragment2_to_adminTalepGoruntuleFragment"
+            app:destination="@id/adminTalepGoruntuleFragment" />
+        <action
+            android:id="@+id/action_adminHomePageFragment2_to_adminKullaniciEkleFragment"
+            app:destination="@id/adminKullaniciEkleFragment" />
+        <action
+            android:id="@+id/action_adminHomePageFragment2_to_adminMesajFragment"
+            app:destination="@id/adminMesajFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminTalepGoruntuleFragment"
+        android:name="com.utkualtinay37.btdestekuygulamasi.adminFragment.AdminTalepGoruntuleFragment"
+        android:label="fragment_admin_talep_goruntule"
+        tools:layout="@layout/fragment_admin_talep_goruntule" >
+        <action
+            android:id="@+id/action_adminTalepGoruntuleFragment_to_adminTalepDetayFragment"
+            app:destination="@id/adminTalepDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminKullaniciEkleFragment"
+        android:name="com.utkualtinay37.btdestekuygulamasi.adminFragment.AdminKullaniciEkleFragment"
+        android:label="fragment_admin_kullanici_ekle"
+        tools:layout="@layout/fragment_admin_kullanici_ekle" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.utkualtinay37.btdestekuygulamasi.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/adminMesajFragment"
+        android:name="com.utkualtinay37.btdestekuygulamasi.adminFragment.AdminMesajFragment"
+        android:label="fragment_admin_mesaj"
+        tools:layout="@layout/fragment_admin_mesaj" />
+    <fragment
+        android:id="@+id/adminTalepDetayFragment"
+        android:name="com.utkualtinay37.btdestekuygulamasi.adminFragment.AdminTalepDetayFragment"
+        android:label="fragment_admin_talep_detay"
+        tools:layout="@layout/fragment_admin_talep_detay" />
+</navigation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/UserAnaSayfaMenu"
+            android:title="Ana Sayfa"
+            android:icon="@drawable/ic_home"
+            ></item>
+
+        <item android:id="@+id/UserTalepGoruntuleMenu" android:title="Talep Goruntule" android:icon="@drawable/ic_talepgoruntule"></item>
+        <item android:id="@+id/UserTalepOlusturMenu" android:title="Talep Olustur" android:icon="@drawable/ic_talepolusturr"></item>
+
+        <item android:id="@+id/UserLogoutMenu" android:title="Çıkış yap" android:icon="@drawable/ic_logout"></item>
+    </group>
+</menu>

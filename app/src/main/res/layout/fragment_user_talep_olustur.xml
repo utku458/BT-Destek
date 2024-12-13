@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/appbackground"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".userFragment.UserTalepOlusturFragment"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textMainDropDownLayout"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        android:backgroundTint="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:layout_gravity="center"
+        android:hint="Konu"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteMainTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:inputType="none"
+            android:text="Diger" />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textDropDownLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:hint="Icerik"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:inputType="none"
+            android:text="Diger" />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textBaslikLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:hint="Baslik"
+        app:endIconMode="clear_text"
+
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="77dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textTalepOlusturBaslikText"
+            android:layout_width="match_parent"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/white"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textTalepOlusturLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="50"
+        app:boxStrokeColor="@color/white"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        android:backgroundTint="@color/white"
+
+        android:hint="Konu"
+
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="77dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/talepOlusturKonuText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/white"
+            app:boxStrokeColor="@color/white"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/talepOlusturGonderbtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="@color/design_default_color_primary"
+        app:strokeWidth="2dp"
+        android:layout_marginTop="40dp"
+        android:text="Gonder"
+        android:textSize="17dp"
+        android:padding="8dp"
+        android:textAllCaps="false"
+        android:textColor="#FBEFEF"
+        android:layout_gravity="center"
+        app:cornerRadius="16dp"></com.google.android.material.button.MaterialButton>
+
+
+
+
+</LinearLayout>

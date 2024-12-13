@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_user_graph"
+    app:startDestination="@id/userHomePageFragment">
+
+    <fragment
+        android:id="@+id/userHomePageFragment"
+        android:name="com.utkualtinay37.btdestekuygulamasi.userFragment.UserHomePageFragment"
+        android:label="fragment_user_home_page"
+        tools:layout="@layout/fragment_user_home_page" >
+        <action
+            android:id="@+id/action_userHomePageFragment_to_userTalepGoruntuleFragment"
+            app:destination="@id/userTalepGoruntuleFragment" />
+        <action
+            android:id="@+id/action_userHomePageFragment_to_userMessageFragment"
+            app:destination="@id/userMessageFragment" />
+        <action
+            android:id="@+id/action_userHomePageFragment_to_userTalepOlusturFragment"
+            app:destination="@id/userTalepOlusturFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userTalepGoruntuleFragment"
+        android:name="com.utkualtinay37.btdestekuygulamasi.userFragment.UserTalepGoruntuleFragment"
+        android:label="fragment_user_talep_goruntule"
+        tools:layout="@layout/fragment_user_talep_goruntule" >
+        <action
+            android:id="@+id/action_userTalepGoruntuleFragment_to_adminTalepDetayFragment2"
+            app:destination="@id/adminTalepDetayFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/userMessageFragment"
+        android:name="com.utkualtinay37.btdestekuygulamasi.userFragment.UserMesasgeFragment"
+        android:label="fragment_user_message"
+        tools:layout="@layout/fragment_user_message" />
+    <fragment
+        android:id="@+id/userTalepOlusturFragment"
+        android:name="com.utkualtinay37.btdestekuygulamasi.userFragment.UserTalepOlusturFragment"
+        android:label="fragment_user_talep_olustur"
+        tools:layout="@layout/fragment_user_talep_olustur" >
+        <action
+            android:id="@+id/action_userTalepOlusturFragment_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.utkualtinay37.btdestekuygulamasi.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/adminTalepDetayFragment2"
+        android:name="com.utkualtinay37.btdestekuygulamasi.adminFragment.AdminTalepDetayFragment"
+        android:label="fragment_admin_talep_detay"
+        tools:layout="@layout/fragment_admin_talep_detay" />
+</navigation>

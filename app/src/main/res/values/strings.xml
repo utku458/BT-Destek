@@ -1,0 +1,54 @@
+
+<resources>
+<string name="app_name">BT Destek Uygulamasi</string>
+<!-- TODO: Remove or change this placeholder text -->
+<string name="open">Open</string>
+<string name="close">Close</string>
+<!-- TODO: Remove or change this placeholder text -->
+<string name="hello_blank_fragment">Hello blank fragment</string>
+
+<string-array name="talepler">
+    <item>Teknik Destek</item>
+    <item>Yazilim</item>
+    <item>Ekipman</item>
+    <item>Hesap</item>
+    <item>Diger</item>
+</string-array>
+
+
+<string-array name="teknik_destek">
+    <item>Telefon</item>
+    <item>Bilgisayar</item>
+    <item>Ofis</item>
+    <item>Diger</item>
+</string-array>
+
+<string-array name="yazilim">
+    <item>Format</item>
+    <item>Uygulama</item>
+    <item>Sifre</item>
+    <item>Diger</item>
+</string-array>
+
+
+<string-array name="ekipman">
+
+    <item>Bilgisayar</item>
+    <item>Monitor</item>
+    <item>Klavye/Mouse</item>
+    <item>Canta</item>
+    <item>Diger</item>
+</string-array>
+
+<string-array name="hesap">
+    <item>Sifremi unuttum</item>
+    <item>Sifremi degistirmek istiyorum</item>
+    <item>Kullanici adimi unuttum</item>
+    <item>Diger</item>
+</string-array>
+
+
+<string-array name="diger">
+    <item>Genel</item>
+</string-array>
+</resources>

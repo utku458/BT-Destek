@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/appbackgroundv2"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".adminFragment.AdminTalepDetayFragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="400dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        android:hint="Kullanıcı adı"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:endIconMode="clear_text"
+        tools:layout_editor_absoluteX="1dp"
+        android:enabled="false"
+        tools:layout_editor_absoluteY="77dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adminTalepDetayOlusturanTxt"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="400dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        android:padding="20dp"
+        android:hint="Konu"
+        app:endIconMode="clear_text"
+        tools:layout_editor_absoluteX="1dp"
+        android:enabled="false"
+        tools:layout_editor_absoluteY="77dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adminTalepDetayKonuTxt"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="60dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="400dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+        android:padding="20dp"
+        android:hint="Icerik"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:endIconMode="clear_text"
+
+
+
+        tools:layout_editor_absoluteX="1dp"
+        android:enabled="false"
+        tools:layout_editor_absoluteY="77dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adminTalepDetayIcerikTxt"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="400dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+        android:padding="20dp"
+        android:hint="Konu Detay"
+        app:endIconMode="clear_text"
+
+
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        tools:layout_editor_absoluteX="1dp"
+        android:enabled="false"
+        tools:layout_editor_absoluteY="77dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/AdminTalepDetayKonuDetayText"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="5"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/silbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:clickable="true"
+            android:backgroundTint="#FF9E80"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/messagebtn"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/messagebtn"
+            android:layout_width="wrap_content"
+            android:backgroundTint="#B9F6CA"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:clickable="true"
+
+            android:src="@drawable/ic_message"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</LinearLayout>

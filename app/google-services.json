@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "470338534469",
+    "project_id": "donemprojesi-42c3d",
+    "storage_bucket": "donemprojesi-42c3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470338534469:android:720109b992dcba7241772c",
+        "android_client_info": {
+          "package_name": "com.utkualtinay37.btdestekuygulamasi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470338534469-rnjd39fipatcl08c1s9v7p96g8u10or4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2S3bCznUTRsvxJct7B2hqrfCkC3sQBX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470338534469-rnjd39fipatcl08c1s9v7p96g8u10or4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

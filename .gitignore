@@ -13,3 +13,14 @@
 .externalNativeBuild
 .cxx
 local.properties
+.idea/
+xcuserdata/
+node_modules/
+.vs/
+google-services.json
+GoogleService-Info.plist
+.env
+.env.*
+bin/
+obj/
+build/
